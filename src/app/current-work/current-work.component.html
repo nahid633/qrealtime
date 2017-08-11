@@ -1,0 +1,10 @@
+<div class="header">Cari Sistemin Vəziyyəti</div>
+<p-dataTable [style]="{'font-size':'1.5em'}"  [value]="works" [sortMode]="'single'"   [emptyMessage]="' Nəticə tapılmadı... '" scrollable="true" scrollHeight="40vh" [responsive]="true">
+  <p-column field="table" header="Masalar" styleClass="myTable" ></p-column>
+  <p-column field="last_call" header="Son Çağırış" ></p-column>
+  <p-column field="servant" header="Təmsilçi"></p-column>
+  <p-column field="ticket" header="Son Çağırılan Talon"></p-column>
+  <p-column field="served_num" header="Xidmət Göstərilmiş Şəxslərin Sayı" ></p-column>
+  <p-column field="real_serve_time" header="Hal-hazırki Xidmət vaxtı"  ></p-column>
+  <p-column field="all_serve_time" header="Ümumi Xidmət vaxtı"></p-column>
+</p-dataTable>

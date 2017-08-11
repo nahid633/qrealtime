@@ -1,0 +1,13 @@
+<div class="ui-g panel-footer" style="height: 8vh;font-size: medium">
+  <div class="ui-grid-col-4"><i class="fa fa-circle" style="color:red"></i> Masada təmsilçinin olmadığını bildirir</div>
+  <div class="ui-grid-col-4"><i class="fa fa-circle" style="color:green"></i> Təmsilçinin hal-hazırda xidmət göstərdiyini bildirir</div>
+  <div class="ui-grid-col-4"><i class="fa fa-circle" style="color:blue"></i> Təmsilçinin onlayn olduğunu, lakin xidmət göstərmədiyini bildirir</div>
+</div>
+<p-dataTable  [value]="sections" [style]="{'font-size':'1.5em','height':'47vh'}" [(selection)]="sections[0]"   scrollable="true" scrollHeight="35vh"  [responsive]="true" >
+  <p-column field="name"  header="Bölmənin adı"></p-column>
+  <p-column field="served_tables_num" header="Xidmət göstərən masa sayı"></p-column>
+  <p-column field="served_num" header="Xidmət almışların sayı"></p-column>
+  <p-column field="avg_serve_time" header="Orta xidmət göstərmə müddəti" > </p-column>
+  <p-column field="waiting_time" header="Gözləyənlərin sayı" ></p-column>
+  <p-row></p-row>
+</p-dataTable>

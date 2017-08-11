@@ -1,0 +1,14 @@
+
+#top, #bottom{
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+#top{
+  height: 45vh;
+  top:0;
+}
+#bottom{
+  height: 55vh;
+  bottom: 0;
+}
